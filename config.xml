@@ -12,6 +12,7 @@
 	<author href="http://www.oligoform.com/" email="info@oligoform.com">Oligoform</author>
 
 	<gap:platform name="android" />
+	<gap:platform name="ios" />
 
 	<preference name="disallowOverscroll" value="true" />
 	<preference name="webviewbounce" value="false" />
