@@ -24,6 +24,12 @@ body {
 	text-rendering: optimizelegibility;     /* Enable kerning and optional ligatures */
 	-webkit-text-size-adjust: 100%;         /* Block text auto-scaling (eg. when switching from portrait to landscape) */
 	-webkit-font-smoothing: antialiased;    /* Enhance font aliasing */
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	orphans: 3;
+	widows: 3;
 }
 
 
