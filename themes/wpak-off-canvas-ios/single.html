@@ -6,7 +6,7 @@
 
 	<div class="post-title">
 		<% if(  post.thumbnail && post.thumbnail.src && post.thumbnail.src.length ){ %>
-			<div class="post-thumbnail" style="background-image:url(<%= post.thumbnail.src %>);background-size:contain;"></div>
+			<div class="post-thumbnail" style="background-image:url(<%= post.thumbnail.src %>);background-size:contain; background-repeat: no-repeat; background-position: center center;"></div>
 		<% } %>	
 		<h1>
 			<%= post.title %>
