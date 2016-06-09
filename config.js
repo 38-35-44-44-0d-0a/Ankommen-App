@@ -5,8 +5,8 @@ define( function ( require ) {
 	return {
 		app_slug : 'ankommen-dev',
 		wp_ws_url : 'http://app.serviceikoe.de/wp-appkit-api/ankommen-dev',
-		theme : 'wp-appkit-tutorial-my-theme',
-		version : '1.0.0',
+		theme : 'wpak-theme-bootstrap-master',
+		version : '1.0.1',
 		app_title : 'Ankommen und mehr',
 		app_platform : 'android',
 		gmt_offset : 2,
