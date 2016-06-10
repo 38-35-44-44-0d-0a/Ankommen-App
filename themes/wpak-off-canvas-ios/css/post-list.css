@@ -34,7 +34,7 @@
 
 .list-template a {
 	color: #000;
-	margin: 0px;
+	margin: 1em;
 	padding: 10px 10px 6px 10px;
 	border-bottom: 1px #AC98BA solid;
 	display: block;
@@ -66,7 +66,7 @@
 	float: left;
 	padding: 2px;
 	margin-right: 10px;
-	background-color: #024883;
+	background-color: #fff;
 }
 
 /**
@@ -79,5 +79,7 @@
 	background-position: center center;
 	width: 100px;
 	height: 100px;
-	border: 1px #00A2D3 solid;
+}
+.content-item {
+	margin-bottom: 1em;
 }
