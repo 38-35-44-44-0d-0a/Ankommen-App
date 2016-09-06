@@ -2,12 +2,12 @@
 <widget xmlns       = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.oligoform.ankommen"
-        versionCode = "13"
-        version     = "1.1.1b" >
+        versionCode = "1"
+        version     = "1.0drb" >
 
 	<name>Ankommen</name>
 
-	<description>Ankommen App mit erstinformationen für Flüchtlinge (App in Beta Phase)</description>
+	<description>Ankommen App mit Erstinformationen für Flüchtlinge</description>
 
 	<author href="http://www.oligoform.com/" email="info@oligoform.com">Oligoform</author>
 
