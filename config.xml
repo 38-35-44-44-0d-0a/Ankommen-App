@@ -28,8 +28,8 @@
 	
 	<!-- Whitelist policy  -->
 	<access origin="http://app.serviceikoe.de" />
-	<allow-intent href="*" />
-	<allow-navigation href="*" />
+	<allow-intent href="http://app.serviceikoe.de" />
+	<allow-navigation href="http://app.serviceikoe.de" />
 
 	<!-- SplashScreen configuration -->
 	<preference name="SplashScreen" value="splash" />
