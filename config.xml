@@ -27,9 +27,9 @@
 	<plugin name="org.apache.cordova.inappbrowser" spec="0.3.3" />
 	
 	<!-- Whitelist policy  -->
-	<access origin="http://app.serviceikoe.de" />
-	<allow-intent href="http://app.serviceikoe.de" />
-	<allow-navigation href="http://app.serviceikoe.de" />
+	<access origin="*" />
+	<allow-intent href="*" />
+	<allow-navigation href="*" />
 
 	<!-- SplashScreen configuration -->
 	<preference name="SplashScreen" value="splash" />
