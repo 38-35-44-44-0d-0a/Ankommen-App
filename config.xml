@@ -27,7 +27,7 @@
 	<plugin name="org.apache.cordova.inappbrowser" spec="0.3.3" />
 	
 	<!-- Whitelist policy  -->
-	<access origin="*" />
+	<access origin="http://app.serviceikoe.de" />
 	<allow-intent href="*" />
 	<allow-navigation href="*" />
 
