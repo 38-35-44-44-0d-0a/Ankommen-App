@@ -31,7 +31,7 @@
 	<gap:plugin name="com.phonegap.plugin.statusbar" />
 	
 	<!-- Whitelist policy  -->
-	<access origin="*" />
+	<access origin="*" browserOnly="true"/>
 	<allow-intent href="*" />
 	<allow-navigation href="*" />*
 
