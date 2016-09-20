@@ -31,10 +31,19 @@
 	<gap:plugin name="com.phonegap.plugin.statusbar" />
 	
 	<!-- Whitelist policy  -->
-	<access origin="*" browserOnly="true"/>
-	<allow-intent href="*" />
-	<allow-navigation href="*" />*
-
+	<!-- Allow general communication -->
+ 	 <access origin="*"/>
+ 	<!-- Allow navigation only for our domain (incl. subdomains) -->
+  	<allow-navigation href="http://app.serviceikoe.de/*" />
+ 	<!-- Allow the system to handle the following links: -->
+	<allow-intent href="http://*/*"/>
+	<allow-intent href="https://*/*"/>
+	<allow-intent href="tel:*"/>
+	<allow-intent href="sms:*"/>
+	<allow-intent href="mailto:*"/>
+	<allow-intent href="geo:*"/>
+	<allow-intent href="whatsapp:*"/>
+  
 	<!-- SplashScreen configuration -->
 	<preference name="SplashScreen" value="splash" />
 	<preference name="SplashScreenDelay" value="10000" />
