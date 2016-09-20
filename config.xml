@@ -28,7 +28,7 @@
 	<plugin name="cordova-plugin-splashscreen" source="npm" />
 	<plugin name="cordova-plugin-device" source="npm" />
 	<plugin name="org.apache.cordova.inappbrowser" spec="0.3.3" />
-	<gap:plugin name="com.phonegap.plugin.statusbar" />
+	<plugin name="com.phonegap.plugin.statusbar" spec="1.1.0" source="pgb" />
 	
 	<!-- Whitelist policy  -->
 	<!-- Allow general communication -->
