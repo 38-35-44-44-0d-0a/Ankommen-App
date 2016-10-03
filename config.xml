@@ -1,82 +1,106 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns       = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "com.oligoform.ankommen"
+        id          = "com.oligoform.erstinfos"
         versionCode = "1"
         version     = "1.0drb" >
 
-	<name>Ankommen</name>
+	<name>Erstinfos.App!</name>
 
-	<description>Ankommen App mit Erstinformationen für Flüchtlinge</description>
+	<description>Erstinfos.App! App mit Erstinformationen für Flüchtlinge</description>
 
 	<author href="http://www.oligoform.com/" email="info@oligoform.com">Oligoform</author>
+	<!-- Platforms -->
+		<gap:platform name="android" />
+		<gap:platform name="ios" />
+		<gap:platform name="winphone" />
 
-	<gap:platform name="android" />
-	<gap:platform name="ios" />
-	<gap:platform name="winphone" />
-
-	<preference name="disallowOverscroll" value="true" />
-	<preference name="webviewbounce" value="false" />
-	<preference name="StatusBarOverlaysWebView" value="false" />
-	<preference name="StatusBarBackgroundColor" value="#000000" />
-	<preference name="StatusBarStyle" value="lightcontent" />
+	<!-- iOS Statusbar Settings -->	
+		<preference name="disallowOverscroll" value="true" />
+		<preference name="webviewbounce" value="false" />
+		<preference name="StatusBarOverlaysWebView" value="false" />
+		<preference name="StatusBarBackgroundColor" value="#000000" />
+		<preference name="StatusBarStyle" value="lightcontent" />
 
 	<!-- PhoneGap plugin declaration -->
-	<plugin name="cordova-plugin-inappbrowser" source="npm" />
-	<plugin name="cordova-plugin-network-information" source="npm" />
-	<plugin name="cordova-plugin-whitelist" source="npm" />
-	<plugin name="cordova-plugin-splashscreen" source="npm" />
-	<plugin name="cordova-plugin-device" source="npm" />
-	<plugin name="org.apache.cordova.inappbrowser" spec="0.3.3" />
-	<plugin name="com.phonegap.plugin.statusbar" spec="1.1.0" source="pgb" />
+		<plugin name="cordova-plugin-inappbrowser" source="npm" />
+		<plugin name="cordova-plugin-network-information" source="npm" />
+		<plugin name="cordova-plugin-whitelist" source="npm" />
+		<plugin name="cordova-plugin-splashscreen" source="npm" />
+		<plugin name="cordova-plugin-device" source="npm" />
+		<plugin name="org.apache.cordova.inappbrowser" spec="0.3.3" />
+		<plugin name="com.phonegap.plugin.statusbar" spec="1.1.0" source="pgb" />
 	
 	<!-- Whitelist policy  -->
-	<!-- Allow general communication -->
- 	 <access origin="*"/>
- 	<!-- Allow navigation only for our domain (incl. subdomains) -->
-  	<allow-navigation href="http://app.serviceikoe.de/*" />
- 	<!-- Allow the system to handle the following links: -->
-	<allow-intent href="http://*/*"/>
-	<allow-intent href="https://*/*"/>
-	<allow-intent href="tel:*"/>
-	<allow-intent href="sms:*"/>
-	<allow-intent href="mailto:*"/>
-	<allow-intent href="geo:*"/>
-	<allow-intent href="whatsapp:*"/>
-  
+		<!-- Allow general communication -->
+			 <access origin="*"/>
+		<!-- Allow navigation only for our domain (incl. subdomains) -->
+			<allow-navigation href="http://*.erstinfos.de/*" />
+		<!-- Allow the system to handle the following links: -->
+			<allow-intent href="http://*/*"/>
+			<allow-intent href="https://*/*"/>
+			<allow-intent href="tel:*"/>
+			<allow-intent href="sms:*"/>
+			<allow-intent href="mailto:*"/>
+			<allow-intent href="geo:*"/>
+			<allow-intent href="whatsapp:*"/>
+	
 	<!-- SplashScreen configuration -->
-	<preference name="SplashScreen" value="splash" />
-	<preference name="SplashScreenDelay" value="10000" />
-	<preference name="FadeSplashScreenDuration" value="300" />
+		<preference name="SplashScreen" value="splash" />
+		<preference name="SplashScreenDelay" value="10000" />
+		<preference name="FadeSplashScreenDuration" value="300" />
 	
 	<!-- Icons and Splashscreens declaration -->
+		<platform name="ios">
+			<!-- Icons -->
+				<icon platform="ios" src="res/icons/ios/icon-small.png" width="29" height="29" />
+				<icon platform="ios" src="res/icons/ios/icon-small-2x.png" width="58" height="58" />
+				<icon platform="ios" src="res/icons/ios/icon-40.png" width="40" height="40" />
+				<icon platform="ios" src="res/icons/ios/icon-40-2x.png" width="80" height="80" />
+				<icon platform="ios" src="res/icons/ios/icon-50.png" width="50" height="50" />
+				<icon platform="ios" src="res/icons/ios/icon-50-2x.png" width="100" height="100" />
+				<icon platform="ios" src="res/icons/ios/icon.png" width="57" height="57" />
+				<icon platform="ios" src="res/icons/ios/icon-2x.png" width="114" height="114" />
+				<icon platform="ios" src="res/icons/ios/icon-60.png" width="60" height="60" />
+				<icon platform="ios" src="res/icons/ios/icon-60-2x.png" width="120" height="120" />
+				<icon platform="ios" src="res/icons/ios/icon-60-3x.png" width="180" height="180" />
+				<icon platform="ios" src="res/icons/ios/icon-72.png" width="72" height="72" />
+				<icon platform="ios" src="res/icons/ios/icon-72-2x.png" width="144" height="144" />
+				<icon platform="ios" src="res/icons/ios/icon-76.png" width="76" height="76" />
+				<icon platform="ios" src="res/icons/ios/icon-76-2x.png" width="152" height="152" />
+			<!-- Splashscreens -->
+				<splash platform="ios" src="res/screens/ios/screen-iphone-portrait.png" width="320" height="480" />
+				<splash platform="ios" src="res/screens/ios/screen-iphone-portrait-2x.png" width="640" height="960" />
+				<splash platform="ios" src="res/screens/ios/screen-iphone-portrait-568h-2x.png" width="640" height="1136" />
+				<splash platform="ios" src="res/screens/ios/screen-iphone-portrait-667h.png" width="750" height="1334" />
+				<splash platform="ios" src="res/screens/ios/screen-iphone-portrait-736h.png" width="1242" height="2208" />
+				<splash platform="ios" src="res/screens/ios/screen-ipad-portrait.png" width="768" height="1024" />
+				<splash platform="ios" src="res/screens/ios/screen-ipad-portrait-2x.png" width="1536" height="2048" />
+		</platform>
 
-	<icon src="icon.png" gap:platform="android" />
-	<icon src="icons/icon-wp-appkit-ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
-	<icon src="icons/icon-wp-appkit-mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
-	<icon src="icons/icon-wp-appkit-hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
-	<icon src="icons/icon-wp-appkit-xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
-	<icon src="icons/icon-wp-appkit-xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi" />
-	<icon src="icons/icon-wp-appkit-xxxhdpi.png" gap:platform="android" gap:qualifier="xxxhdpi" />
-	<icon src="www/icon.png" gap:platform="ios" />
-	<icon src="www/icons/icon-wp-appkit-ldpi.png" gap:platform="ios" gap:qualifier="ldpi" />
-	<icon src="www/icons/icon-wp-appkit-mdpi.png" gap:platform="ios" gap:qualifier="mdpi" />
-	<icon src="www/icons/icon-wp-appkit-hdpi.png" gap:platform="ios" gap:qualifier="hdpi" />
-	<icon src="www/icons/icon-wp-appkit-xhdpi.png" gap:platform="ios" gap:qualifier="xhdpi" />
-	<icon src="www/icons/icon-wp-appkit-xxhdpi.png" gap:platform="ios" gap:qualifier="xxhdpi" />
-	<icon src="www/icons/icon-wp-appkit-xxxhdpi.png" gap:platform="ios" gap:qualifier="xxxhdpi" />
-	<icon src="icon.png" gap:platform="winphone" />
-	<icon src="icons/icon-wp-appkit-ldpi.png" gap:platform="winphone" gap:qualifier="ldpi" />
-	<icon src="icons/icon-wp-appkit-mdpi.png" gap:platform="winphone" gap:qualifier="mdpi" />
-	<icon src="icons/icon-wp-appkit-hdpi.png" gap:platform="winphone" gap:qualifier="hdpi" />
-	<icon src="icons/icon-wp-appkit-xhdpi.png" gap:platform="winphone" gap:qualifier="xhdpi" />
-	<icon src="icons/icon-wp-appkit-xxhdpi.png" gap:platform="winphone" gap:qualifier="xxhdpi" />
-	<icon src="icons/icon-wp-appkit-xxxhdpi.png" gap:platform="winphone" gap:qualifier="xxxhdpi" />
+		<platform name="android">
+			<!-- Icons -->
+				<icon platform="android" qualifier="ldpi" src="res/icons/android/icon-36-ldpi.png"/>
+				<icon platform="android" qualifier="mdpi" src="res/icons/android/icon-48-mdpi.png"/>
+				<icon platform="android" qualifier="hdpi" src="res/icons/android/icon-72-hdpi.png"/>
+				<icon platform="android" qualifier="xhdpi" src="res/icons/android/icon-96-xhdpi.png"/>
+				<icon platform="android" qualifier="xxhdpi" src="res/icons/android/icon-144-xxhdpi.png"/>
+				<icon platform="android" qualifier="xxxhdpi" src="res/icons/android/icon-192-xxxhdpi.png"/>
+			<!-- Splashscreens -->
+				<splash platform="android" qualifier="ldpi" src="res/screens/android/screen-ldpi-portrait.png" />
+				<splash platform="android" qualifier="mdpi" src="res/screens/android/screen-mdpi-portrait.png" />
+				<splash platform="android" qualifier="hdpi" src="res/screens/android/screen-hdpi-portrait.png" />
+				<splash platform="android" qualifier="xhdpi" src="res/screens/android/screen-xhdpi-portrait.png" />
+		</platform>
 
-	
-	<gap:splash src="splash.png" gap:platform="android" />
-	<splash src="www/splash.png" gap:platform="ios" />
-	<gap:splash src="splash.png" gap:platform="winphone" />
-	
-	
+		<platform name="winphone">
+			<!-- Icons -->
+				<icon platform="wp8" src="res/icons/wp8/ApplicationIcon.png" width="99" height="99" />
+				<icon platform="wp8" src="res/icons/wp8/Background.png" width="159" height="159" />
+			<!-- Splashscreens -->
+				<icon platform="windows" src="res/icons/windows8/logo.png" width="150" height="150" />
+				<icon platform="windows" src="res/icons/windows8/smalllogo.png" width="30" height="30" />
+				<icon platform="windows" src="res/icons/windows8/storelogo.png" width="50" height="50" />
+		</platform>
+
 </widget>
