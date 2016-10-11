@@ -2,8 +2,8 @@
 <widget xmlns       = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.oligoform.erstinfos"
-        versionCode = "2"
-        version     = "1.1drb" >
+        versionCode = "3"
+        version     = "1.2drb" >
 
 	<name>Erstinfos.App!</name>
 
@@ -22,14 +22,36 @@
 		<preference name="StatusBarBackgroundColor" value="#000000" />
 		<preference name="StatusBarStyle" value="lightcontent" />
 
+	<!-- imgcache Settings -->
+		<feature name="http://api.phonegap.com/1.0/file"/>
+		<feature name="http://api.phonegap.com/1.0/device"/>
+		<feature name="http://api.phonegap.com/1.0/network"/>
+
+		<feature name="Device">
+			<param name="ios-package" value="CDVDevice" />
+			<param name="android-package" value="org.apache.cordova.device.Device" />
+		</feature>
+		<feature name="File">
+			<param name="ios-package" value="CDVFile" />
+			<param name="android-package" value="org.apache.cordova.file.FileUtils" />
+		</feature>
+		<feature name="FileTransfer">
+			<param name="ios-package" value="CDVFileTransfer" />
+			<param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
+		</feature>
+		<access origin="cdvfile://*" />
+		<allow-intent href="cdvfile://*" />
+		<preference name="iosPersistentFileLocation" value="Library" />
+
 	<!-- PhoneGap plugin declaration -->
 		<plugin name="cordova-plugin-inappbrowser" source="npm" />
 		<plugin name="cordova-plugin-network-information" source="npm" />
 		<plugin name="cordova-plugin-whitelist" source="npm" />
 		<plugin name="cordova-plugin-splashscreen" source="npm" />
 		<plugin name="cordova-plugin-device" source="npm" />
-		<plugin name="org.apache.cordova.inappbrowser" spec="0.3.3" />
-		<plugin name="com.phonegap.plugin.statusbar" spec="1.1.0" source="pgb" />
+		<plugin name="cordova-plugin-statusbar" source="npm" />
+		<plugin name="cordova-plugin-file" source="npm" />
+		<plugin name="cordova-plugin-file-transfer" source="npm" />
 	
 	<!-- Whitelist policy  -->
 		<!-- Allow general communication -->
