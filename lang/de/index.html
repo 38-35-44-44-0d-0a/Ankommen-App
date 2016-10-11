@@ -4,7 +4,6 @@
 <head>
     <script src="cordova.js"></script>
 
-    <link rel="stylesheet" href="core/css/debug.css">
     <script type="text/javascript">
         var require = {
             urlArgs: "bust=" + new Date().getTime()
@@ -18,7 +17,7 @@
     <script>
         var startTest = function() {
             // see console output for debug info
-            ImgCache.options.debug = true;
+            ImgCache.options.debug = false;
             ImgCache.init(function() {
                 console.log('ImgCache initialised');
             });
@@ -35,9 +34,6 @@
 
 <body>
     <div id="app-layout"></div>
-</body>
-
-</html>v id="app-debug-button"></div>
 </body>
 
 </html>
