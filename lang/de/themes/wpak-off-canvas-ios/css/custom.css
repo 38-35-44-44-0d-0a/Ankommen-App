@@ -66,10 +66,10 @@ body {
 }
 
 .app-message-bar {
-    background-color: #42cfeb;
+    background-color: #0078FF;
     color: #000;
-    border-top: 1px #42cfeb solid;
-    border-bottom: 1px #42cfeb solid;
+    border-top: 1px #0078FF solid;
+    border-bottom: 1px #0078FF solid;
 }
 
 .menu-button {
